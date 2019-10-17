@@ -10,3 +10,5 @@ def clr():
 
 def repeat(text):
     """Infinitely repeats specified text."""
+    while True:
+        print(text)
