@@ -8,6 +8,7 @@ class InvalidInputError(Exception):
     """Throw error if function input is invalid."""
 
 
+# Variable for calling current Python version
 python_version = str(platform.python_version())
 
 
