@@ -17,3 +17,14 @@ def repeat(text):
 def p(text):
     """Just shorter print."""
     print(text)
+
+
+def f(num):
+    """Just shorter "float()"."""
+    float(num)
+
+
+try:
+    a = f(input("Type in\n>>> "))
+except ValueError:
+    p("bad")
