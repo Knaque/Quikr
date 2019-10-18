@@ -1,19 +1,29 @@
 """Quikr - Development made quikr."""
 
-import os
+# =========================== Required Modules ===========================
 import platform
+# ========================================================================
 
 
+# ============================== Exceptions ==============================
 class InvalidInputError(Exception):
-    """Throw error if function input is invalid."""
+    """Throw error if input is invalid."""
+# ========================================================================
 
 
+# ============================== Variables ===============================
 # Variable for calling current Python version
-python_version = str(platform.python_version())
+# NOTE: Can someone work out a way of doing this so that platform is only
+# imported if the variable is called? Using this in a function and calling as a
+# var adds a "None" line for some reason. ~Reilly
+py_version = str(platform.python_version())
+# ========================================================================
 
 
+# ============================== Functions ===============================
 def clear():
     """Clear terminal."""
+    import os  # Will be imported if it hasn't been already
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
@@ -28,3 +38,4 @@ def repeat(text, times="inf"):
     else:
         raise InvalidInputError("Second argument "
                                 "must be 'inf' or an integer.")
+# ========================================================================
