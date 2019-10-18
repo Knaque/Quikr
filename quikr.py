@@ -12,3 +12,8 @@ def repeat(text):
     """Infinitely repeats specified text."""
     while True:
         print(text)
+
+
+def p(text):
+    """Just shorter print."""
+    print(text)
