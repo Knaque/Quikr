@@ -15,7 +15,7 @@ def repeat(text):
 
 
 def p(text):
-    """Just shorter print."""
+    """Just shorter print()."""
     print(text)
 
 
@@ -24,7 +24,6 @@ def f(num):
     float(num)
 
 
-try:
-    a = f(input("Type in\n>>> "))
-except ValueError:
-    p("bad")
+def i(num):
+    """Just shorter "int()"."""
+    int(num)
