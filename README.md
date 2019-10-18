@@ -1,6 +1,6 @@
 ![banner](https://zxcvbnm.icu/external/quikr_banner.png "Quikr Banner")
 
-Quikr is a lightweight Python module designed to simplify the programming workflow with easily memorable shorthand for many common functions.
+Quikr is a small Python module designed to simplify the programming workflow by adding short, easy-to-memorize aliases for many common functions.
 
 ## How to install:
 Since Quikr is in _very_ early development, it is currently not available through `pip`. However, the installation process is still very easy:
