@@ -1,4 +1,4 @@
-"""Quikr - Development, made quikr."""
+"""Quikr - Python development, made quikr."""
 
 import os
 
