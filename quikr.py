@@ -12,14 +12,14 @@ class InvalidInputError(Exception):
 python_version = str(platform.python_version())
 
 
-def clr():
+def clear():
     """Clear terminal."""
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
 def repeat(text, times="inf"):
     """Repeats specified text a specified amount."""
-    if times == "inf":
+    if times.casefold() == "inf":
         while True:
             print(text)
     elif isinstance(times, int) is True:
