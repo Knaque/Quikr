@@ -1,4 +1,4 @@
-"""Quikr - Development made quikr."""
+"""Quikr - Development, made quikr."""
 
 import os
 
