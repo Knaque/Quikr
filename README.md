@@ -12,7 +12,5 @@ Since Quikr is in _very_ early development, it is currently not available throug
 * (Optional) Add an alias, such as `q = quikr`.
 * Happy coding!
 
-> Want something even shorter? [Delights-Dialect](https://github.com/IKARMAII/Delights-Dialect) is a fork of Quikr which aims to further shorten the length of code, albeit at the cost of some readability and intuitiveness.
-
 _Quikr is licensed and developed under the GNU GPL v3 license.
 Created by [W. Reilly Moore](https://zxcvbnm.icu) and [Delight Ibrahim](https://github.com/IKARMAII)._
