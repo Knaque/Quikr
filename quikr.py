@@ -32,7 +32,7 @@ def clear():
 
 
 def repeat(text, times="inf"):
-    """Repeats specified text a specified amount."""
+    """Repeats specified text x times."""
     if times.casefold() == "inf":
         while True:
             print(text)
