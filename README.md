@@ -12,6 +12,8 @@ Since Quikr is in _very_ early development, it is currently not available throug
 * OPTIONAL: Add an alias, such as `q = quikr`.
 * Happy coding!
 
+The documentation for Quikr can be found on the Wiki tab of the GitHub repo.
+
 ## Contributing
 We don't have a whole lot of time to work on this project, but if you like what we're doing here and want to help, we will gladly accept contributions. Assuming you've never contributed to a project before, here are the steps:
 1. Fork and clone this repository.
