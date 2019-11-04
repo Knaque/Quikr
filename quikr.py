@@ -33,11 +33,11 @@ def clear():
 
 def repeat(text, times="inf"):
     """Repeats specified text x times."""
-    if times.casefold() == "inf":
-        while True:
-            print(text)
-    elif isinstance(times, int) is True:
+    if isinstance(times, int) is True:
         for x in range(0, times):
+            print(text)
+    elif times.casefold() == "inf":
+        while True:
             print(text)
     else:
         raise InvalidArgumentError("Second argument must "
