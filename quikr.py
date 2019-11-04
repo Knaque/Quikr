@@ -6,7 +6,7 @@ import platform
 
 
 # ============================== Exceptions ==============================
-class InvalidInputError(Exception):
+class InvalidArgumentError(Exception):
     """Throw error if input is invalid."""
 # ========================================================================
 
@@ -40,6 +40,6 @@ def repeat(text, times="inf"):
         for x in range(0, times):
             print(text)
     else:
-        raise InvalidInputError("Second argument "
-                                "must be 'inf' or an integer.")
+        raise InvalidArgumentError("Second argument must "
+                                   "be 'inf' or an integer.")
 # ========================================================================
