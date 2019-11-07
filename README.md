@@ -1,4 +1,4 @@
-![Quikr Banner](https://zxcvbnm.icu/external/quikr_banner.png "Quikr Banner")
+![Quikr Banner](https://zxcvbnm.icu/ext/quikr_banner.png "Quikr Banner")
 
 Quikr is a Python module made to simplify the programming workflow with short, easily memorable aliases for many common functions. Less code, less Googling, less syntax checking, more programming.
 
