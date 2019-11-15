@@ -8,7 +8,7 @@ Quikr is designed to be easily approachable for everyone. However, if it doesn't
 Until Quikr is added to PyPI (I'll get around to it eventually), this is the current installation process.
 * Download the `quikr.py` file.
 * Place it in the same directory as the file you're calling Quikr from. This is likely your project's root directory.
-* Add `import quikr` to your code. Alternatively, import with an alias instead. `import quikr as q`
+* Add an import line to your code. It's recommended to use an alias. `import quikr as q`
 * Happy coding!
 
 The documentation for Quikr can be found on the [Wiki](https://github.com/offbox/quikr/wiki) tab of the GitHub repository.
