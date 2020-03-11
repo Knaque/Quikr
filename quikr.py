@@ -42,4 +42,9 @@ def repeat(text, times="inf"):
     else:
         raise InvalidArgumentError("Second argument must "
                                    "be 'inf' or an integer.")
+
+
+def rainbow(string):
+    # TODO: Add the rainbow function, TheCrappyCoder 
+    return colorful
 # ========================================================================
