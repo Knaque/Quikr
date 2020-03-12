@@ -45,6 +45,18 @@ def repeat(text, times="inf"):
 
 
 def rainbow(string):
-    # TODO: Add the rainbow function, TheCrappyCoder 
+    # TODO: TheCrappyCoder, Ensure that this user input is sanitized and make sure that you add a try except statment in case string is not str
+    from colorama import Fore
+    from itertools import cycle
+    nums = [ i for i in [1, 2, 3, 4, 5, 6, 7, 8]]
+    for char, x in zip(string, nums):
+        # TODO: TheCrappyCoder, Find a more efficent method for this you buffon
+        colorful += Fore.Red, char if x == 1
+        colorful += Fore.Orange, char if x == 2
+        colorful += Fore.Yellow, char if x == 3
+        colorful += Fore.Green, char if x == 4
+        colorful += Fore.Blue, char if x == 5
+        colorful += Fore.Indigo, char if x == 6
+        colorful += Fore.Violet, char if x == 7
     return colorful
 # ========================================================================
