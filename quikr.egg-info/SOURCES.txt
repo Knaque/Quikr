@@ -1,0 +1,8 @@
+README.md
+quikr.py
+setup.py
+quikr.egg-info/PKG-INFO
+quikr.egg-info/SOURCES.txt
+quikr.egg-info/dependency_links.txt
+quikr.egg-info/requires.txt
+quikr.egg-info/top_level.txt

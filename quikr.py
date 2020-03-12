@@ -45,18 +45,30 @@ def repeat(text, times="inf"):
 
 
 def rainbow(string):
+    """Converts text into a colored rainbow of said text, currently only works in version 2.7."""
     # TODO: TheCrappyCoder, Ensure that this user input is sanitized and make sure that you add a try except statment in case string is not str
-    from colorama import Fore
-    from itertools import cycle
-    nums = [ i for i in [1, 2, 3, 4, 5, 6, 7, 8]]
-    for char, x in zip(string, nums):
-        # TODO: TheCrappyCoder, Find a more efficent method for this you buffon
-        colorful += Fore.Red, char if x == 1
-        colorful += Fore.Orange, char if x == 2
-        colorful += Fore.Yellow, char if x == 3
-        colorful += Fore.Green, char if x == 4
-        colorful += Fore.Blue, char if x == 5
-        colorful += Fore.Indigo, char if x == 6
-        colorful += Fore.Violet, char if x == 7
-    return colorful
+    # TODO: TheCrappyCode, make a version of this that works for python versions == or >= 2.7
+    if "2.7" in platform.python_version():
+        from colorama import Fore
+        from itertools import cycle
+        nums = [1, 2, 3, 4, 5]  # Since the colorama module doesn't have a few colors commonly found on the rainbow, we are limited to five if you count my Magenta substitute
+        colorful = ""
+        for char, x in zip(string, cycle(nums)):
+            # TODO: TheCrappyCoder, Find a more efficent method for this you buffon, and make this run properly
+            if x == 1:
+                colorful += Fore.RED + char
+            elif x == 2:
+                colorful += Fore.YELLOW + char
+            elif x == 3:
+                colorful += Fore.GREEN + char
+            elif x == 4:
+                colorful += Fore.BLUE + char
+            elif x == 5:
+                colorful += Fore.MAGENTA + char
+        return colorful
+    elif "2.7" not in platform.python_version():
+        print("This function only works in Python 2.7, we'll get around to adding a working version for more versions soon.")
+        exit()
+
+print(rainbow("RYGBM"))
 # ========================================================================
