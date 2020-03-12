@@ -69,6 +69,4 @@ def rainbow(string):
     elif "2.7" not in platform.python_version():
         print("This function only works in Python 2.7, we'll get around to adding a working version for more versions soon.")
         exit()
-
-print(rainbow("RYGBM"))
 # ========================================================================
