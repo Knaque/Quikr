@@ -44,8 +44,9 @@ def repeat(text, times="inf"):
                                    "be 'inf' or an integer.")
 
 
+"""
 def rainbow(string):
-    """Converts text into a colored rainbow of said text, currently only works in version 2.7."""
+    Converts text into a colored rainbow of said text, currently only works in version 2.7.
     # TODO: TheCrappyCoder, Ensure that this user input is sanitized and make sure that you add a try except statment in case string is not str
     # TODO: TheCrappyCode, make a version of this that works for python versions == or >= 2.7
     if "2.7" in platform.python_version():
@@ -69,4 +70,8 @@ def rainbow(string):
     elif "2.7" not in platform.python_version():
         print("This function only works in Python 2.7, we'll get around to adding a working version for more versions soon.")
         exit()
+
+
+print(rainbow("Rainbow"))
+"""
 # ========================================================================
