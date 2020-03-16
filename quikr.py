@@ -8,6 +8,8 @@ import platform
 # ============================== Exceptions ==============================
 class InvalidArgumentError(Exception):
     """Throw error if input is invalid."""
+class MissingDependencyError(Exception):
+    """Throw error if a dependency is missing."""
 # ========================================================================
 
 
@@ -44,23 +46,17 @@ def repeat(text, times="inf"):
                                    "be 'inf' or an integer.")
 
 
-def rainbow(string):
-    '''Converts text (str) into a colored rainbow of said text, tested to work on versions 2.7+.'''
-    # TODO: TheCrappyCoder, Ensure that this user input is sanitized and make sure that you add a try except statment in case string is not str
-    from itertools import cycle
-    nums = [1, 2, 3, 4, 5]
-    colorful = ""
-    for char, x in zip(string, cycle(nums)):
-        # TODO: TheCrappyCoder, Find a more efficent method for this, you buffon
-        if x == 1:
-            colorful += "\033[0;31m" + char  # Red
-        elif x == 2:
-            colorful +=  "\033[1;33m" + char  # Yellow (we can't go in sequential order since the ANSI standard doesn't have an orange)
-        elif x == 3:
-            colorful += "\033[0;32m" + char  # Green
-        elif x == 4:
-            colorful += "\033[0;34m" + char  # Blue
-        elif x == 5:
-            colorful += "\033[0;35m" + char  # Purple (No ANSI Indigo or Violet)
-    return colorful
+def rainbow(str):
+    '''Takes a string as input and returns the string in rainbow form. Requires Colorama.'''
+    try: from colorama import init, Fore, Style; init()  # Will be imported if it hasn't been already; Return error message if not installed.
+    except ModuleNotFoundError: raise MissingDependencyError("rainbow() requires Colorama to work: pip install colorama")
+    from itertools import cycle  # Will be imported if it hasn't been already
+
+    colorful = Style.BRIGHT
+
+    for char, col in zip(str, cycle([1, 2, 3, 4, 5, 6])):
+        current_color = Fore.RED if col == 1 else Fore.YELLOW if col == 2 else Fore.GREEN if col == 3 else Fore.CYAN if col == 4 else Fore.BLUE if col == 5 else Fore.MAGENTA
+        colorful = colorful + current_color + char
+
+    return colorful + Style.RESET_ALL
 # ========================================================================
