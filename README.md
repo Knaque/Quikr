@@ -20,4 +20,4 @@ We don't have a whole lot of time to work on this project, but if you like what 
 3. Submit a pull request.
 
 _Quikr is licensed and developed under the GNU GPL v3 license.
-Created by [W. Reilly Moore](https://zxcvbnm.icu)._
+Created by [Reilly Moore](https://knaque.icu) and [Delight Ibhrahim](https://github.com/thecrappycoder)._
