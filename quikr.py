@@ -54,9 +54,8 @@ def rainbow(str):
 
     colorful = Style.BRIGHT
 
-    for char, col in zip(str, cycle([1, 2, 3, 4, 5, 6])):
-        current_color = Fore.RED if col == 1 else Fore.YELLOW if col == 2 else Fore.GREEN if col == 3 else Fore.CYAN if col == 4 else Fore.BLUE if col == 5 else Fore.MAGENTA
-        colorful = colorful + current_color + char
+    for char, col in zip(str, cycle([Fore.RED, Fore.YELLOW, Fore.GREEN, Fore.CYAN, Fore.BLUE, Fore.MAGENTA])):
+        colorful = colorful + col + char
 
     return colorful + Style.RESET_ALL
 # ========================================================================
